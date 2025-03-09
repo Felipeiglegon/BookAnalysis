@@ -13,6 +13,5 @@ const searchPageSchema = new Schema({
     timestamps: true
 });
 
-searchPageSchema.index({ name: 1 }, { unique: true });
 const SearchPage = mongoose.model('SearchPage', searchPagesSchema);
 export default SearchPage;
